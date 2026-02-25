@@ -223,7 +223,12 @@ export function GameScreen({ state, onAnswer, onEventComplete, sound }: GameScre
                   <button
                     key={idx}
                     className="answer-button"
-                    onClick={() => onAnswer(answer)}
+                    onClick={() => {
+                      // Re-unlock/resume audio on every tap — iOS can
+                      // re-suspend the AudioContext between interactions
+                      sound.unlock();
+                      onAnswer(answer);
+                    }}
                   >
                     {answer.text}
                   </button>

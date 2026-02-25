@@ -8,10 +8,13 @@
 :root {
   --scarlet: #C8102E;
   --scarlet-dark: #8B0000;
+  --scarlet-deep: #3D0A14;
   --white: #FFFFFF;
-  --dark-bg: #1A1A2E;
-  --card-bg: #1E1E3A;
-  --muted: #999999;
+  --dark-bg: #1A0A10;
+  --card-bg: #2A1118;
+  --surface-glass: rgba(255, 255, 255, 0.07);
+  --border-glass: rgba(255, 255, 255, 0.10);
+  --muted: #AA8888;
   --gold: #FFD700;
   --blue-shirt: #1E5AA8;
   --tie-red: #CC2233;
@@ -57,7 +60,7 @@ html, body {
   align-items: center;
   padding: 24px 20px;
   text-align: center;
-  background: linear-gradient(180deg, #0D0D1A 0%, var(--dark-bg) 40%, #1A0A0A 100%);
+  background: linear-gradient(180deg, #10050A 0%, var(--dark-bg) 35%, var(--scarlet-deep) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -69,7 +72,7 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at 50% 30%, rgba(200, 16, 46, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 50% 40%, rgba(200, 16, 46, 0.15) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -208,7 +211,7 @@ html, body {
 .mic {
   width: 6px;
   height: 24px;
-  background: #666;
+  background: #5A3A40;
   border-radius: 3px 3px 0 0;
   position: relative;
 }
@@ -220,7 +223,7 @@ html, body {
   left: -3px;
   width: 12px;
   height: 10px;
-  background: #444;
+  background: #4A2A30;
   border-radius: 50%;
 }
 
@@ -247,18 +250,18 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: var(--dark-bg);
+  background: linear-gradient(180deg, #10050A 0%, var(--dark-bg) 50%);
   transition: background-color 0.3s ease;
   position: relative;
 }
 
 .game-screen.feedback-peak {
-  background: linear-gradient(180deg, rgba(255, 215, 0, 0.08) 0%, var(--dark-bg) 30%);
+  background: linear-gradient(180deg, rgba(255, 215, 0, 0.10) 0%, var(--dark-bg) 30%);
 }
 
 .game-screen.feedback-anti {
   animation: screen-shake 0.4s ease-in-out;
-  background: linear-gradient(180deg, rgba(255, 0, 0, 0.1) 0%, var(--dark-bg) 30%);
+  background: linear-gradient(180deg, rgba(200, 16, 46, 0.18) 0%, var(--dark-bg) 30%);
 }
 
 @keyframes screen-shake {
@@ -274,8 +277,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   padding: 12px 16px 8px;
-  background: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(26, 5, 10, 0.7);
+  border-bottom: 2px solid rgba(200, 16, 46, 0.25);
   flex-shrink: 0;
 }
 
@@ -321,7 +324,7 @@ html, body {
   font-size: 14px;
   font-weight: 800;
   color: var(--gold);
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(200, 16, 46, 0.12);
   border-bottom: 1px solid rgba(255, 215, 0, 0.2);
   flex-shrink: 0;
 }
@@ -346,7 +349,7 @@ html, body {
 .sweat-track {
   flex: 1;
   height: 8px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(200, 16, 46, 0.15);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -413,7 +416,7 @@ html, body {
 .mic-sm {
   width: 4px;
   height: 16px;
-  background: #555;
+  background: #5A3A40;
   border-radius: 2px;
   position: relative;
 }
@@ -425,7 +428,7 @@ html, body {
   left: -3px;
   width: 10px;
   height: 8px;
-  background: #444;
+  background: #4A2A30;
   border-radius: 50%;
 }
 
@@ -530,9 +533,9 @@ html, body {
 
 /* ===== QUESTION BUBBLE ===== */
 .question-bubble {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(200, 16, 46, 0.08);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(200, 16, 46, 0.18);
   border-radius: 16px;
   padding: 14px 18px;
   margin: 12px 0;
@@ -566,7 +569,7 @@ html, body {
 .reporter-head {
   width: 20px;
   height: 20px;
-  background: #333;
+  background: #3A2228;
   border-radius: 50%;
   transition: box-shadow 0.3s ease;
 }
@@ -574,17 +577,17 @@ html, body {
 .reporter-body {
   width: 24px;
   height: 14px;
-  background: #2a2a2a;
+  background: #2E1A1E;
   border-radius: 4px 4px 0 0;
   margin-top: -2px;
 }
 
 /* Reporter variants */
-.reporter-1 .reporter-head { background: #3a3a3a; }
-.reporter-2 .reporter-head { background: #333; width: 22px; }
-.reporter-3 .reporter-head { background: #383838; }
-.reporter-4 .reporter-head { background: #303030; width: 18px; }
-.reporter-5 .reporter-head { background: #353535; }
+.reporter-1 .reporter-head { background: #402830; }
+.reporter-2 .reporter-head { background: #3A2228; width: 22px; }
+.reporter-3 .reporter-head { background: #3D252C; }
+.reporter-4 .reporter-head { background: #351E25; width: 18px; }
+.reporter-5 .reporter-head { background: #382028; }
 
 /* Active reporter (asking question) */
 .reporter-active {
@@ -592,7 +595,7 @@ html, body {
   transform: scale(1.15);
 }
 .reporter-active .reporter-head {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(200, 16, 46, 0.4), 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
 /* Reporter reactions */
@@ -620,8 +623,9 @@ html, body {
 .answer-button {
   width: 100%;
   padding: 14px 16px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--surface-glass);
+  border: 1px solid var(--border-glass);
+  border-left: 3px solid rgba(200, 16, 46, 0.35);
   border-radius: 12px;
   color: var(--white);
   font-size: 14px;
@@ -629,7 +633,7 @@ html, body {
   line-height: 1.35;
   text-align: left;
   cursor: pointer;
-  transition: background 0.15s ease, transform 0.1s ease;
+  transition: background 0.15s ease, transform 0.1s ease, border-left-color 0.15s ease;
   min-height: 56px;
   display: flex;
   align-items: center;
@@ -637,7 +641,8 @@ html, body {
 
 .answer-button:active {
   transform: scale(0.98);
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(200, 16, 46, 0.12);
+  border-left-color: var(--scarlet);
 }
 
 /* Feedback Display */
@@ -656,8 +661,8 @@ html, body {
 }
 
 .feedback-mid {
-  background: rgba(136, 136, 136, 0.15);
-  border: 1px solid var(--mid-gray);
+  background: rgba(136, 136, 136, 0.10);
+  border: 1px solid rgba(136, 136, 136, 0.5);
 }
 
 .feedback-anti_kelvin {
@@ -683,7 +688,7 @@ html, body {
   align-items: center;
   padding: 24px 20px;
   overflow-y: auto;
-  background: linear-gradient(180deg, #0D0D1A 0%, var(--dark-bg) 30%, #1A0A0A 100%);
+  background: linear-gradient(180deg, #10050A 0%, var(--dark-bg) 25%, var(--scarlet-deep) 100%);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -693,8 +698,8 @@ html, body {
 
 .gameover-badge {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(200, 16, 46, 0.12);
+  border: 1px solid rgba(200, 16, 46, 0.25);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -731,6 +736,8 @@ html, body {
 .gameover-rating {
   text-align: center;
   margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgba(200, 16, 46, 0.3);
 }
 
 .rating-title {
@@ -782,7 +789,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(200, 16, 46, 0.12);
 }
 
 .stat-label {
@@ -893,7 +900,7 @@ html, body {
   align-items: center;
   justify-content: center;
   padding: 24px 20px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(20, 5, 10, 0.90);
   backdrop-filter: blur(8px);
   touch-action: manipulation;
 }
@@ -1071,8 +1078,8 @@ html, body {
 }
 
 .pronunciation-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: var(--surface-glass);
+  border: 2px solid var(--border-glass);
   border-radius: 16px;
   padding: 28px 24px;
   width: 100%;
@@ -1330,8 +1337,8 @@ html, body {
 .school-btn {
   width: 100%;
   padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--surface-glass);
+  border: 1px solid var(--border-glass);
   border-radius: 12px;
   color: var(--white);
   font-size: 15px;
@@ -1344,7 +1351,7 @@ html, body {
 
 .school-btn:active {
   transform: scale(0.97);
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(200, 16, 46, 0.12);
 }
 
 .school-kelvin-line {
