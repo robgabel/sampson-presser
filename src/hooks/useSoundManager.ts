@@ -10,57 +10,78 @@ type SoundType =
   | 'timer_warning'
   | 'event_intro';
 
+// Minimal silent MP3 used to switch iOS audio session to "playback" mode,
+// allowing Web Audio API to work even when the device ringer/silent switch is off.
+const SILENT_MP3 =
+  'data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRBqSAAAAAAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRBqSAAAAAAAAAAAAAAAAAAAA';
+
 export function useSoundManager() {
   const ctxRef = useRef<AudioContext | null>(null);
   const enabledRef = useRef(true);
   const unlockedRef = useRef(false);
+  // Keep a persistent HTMLAudioElement so iOS doesn't garbage-collect the audio session
+  const silentAudioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Lazily create AudioContext on first user interaction
+  // Get or create the AudioContext. Also attaches a statechange listener
+  // the first time the context is created so iOS re-suspensions are caught.
   function getCtx(): AudioContext {
-    if (!ctxRef.current) {
+    if (!ctxRef.current || ctxRef.current.state === 'closed') {
       const Ctx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-      ctxRef.current = new Ctx();
+      const ctx = new Ctx();
+      // Auto-resume if iOS suspends the context after an interruption
+      ctx.addEventListener('statechange', () => {
+        if (ctx.state === 'suspended' && unlockedRef.current) {
+          ctx.resume().catch(() => {});
+        }
+      });
+      ctxRef.current = ctx;
     }
     return ctxRef.current;
   }
 
-  // Must be called from a direct user tap (e.g. Start button) to unlock audio on iOS
+  // Ensure the AudioContext is running — call on every user interaction.
+  // On iOS Safari, the AudioContext can be re-suspended at any time (tab switch,
+  // lock screen, silence switch toggle). Unlike the initial unlock, calling resume()
+  // on a subsequent gesture is lightweight but critical.
   const unlock = useCallback(() => {
-    if (unlockedRef.current) return;
     try {
-      const Ctx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-      if (!ctxRef.current) {
-        ctxRef.current = new Ctx();
-      }
-      const ctx = ctxRef.current;
+      const ctx = getCtx();
 
-      // Resume must happen during user gesture
+      // Always attempt resume — iOS can re-suspend at any time
       if (ctx.state === 'suspended') {
-        ctx.resume();
+        ctx.resume().catch(() => {});
       }
 
-      // Play a silent buffer to fully unlock iOS audio
-      const buffer = ctx.createBuffer(1, 1, 22050);
-      const source = ctx.createBufferSource();
-      source.buffer = buffer;
-      source.connect(ctx.destination);
-      source.start(0);
+      // First-time unlock: play silent buffer + oscillator
+      if (!unlockedRef.current) {
+        // Play a silent buffer to fully unlock iOS audio
+        const buffer = ctx.createBuffer(1, 1, 22050);
+        const source = ctx.createBufferSource();
+        source.buffer = buffer;
+        source.connect(ctx.destination);
+        source.start(0);
 
-      // Also play a brief silent oscillator as belt-and-suspenders
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      gain.gain.value = 0.001;
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-      osc.start(0);
-      osc.stop(ctx.currentTime + 0.01);
+        // Also play a brief silent oscillator as belt-and-suspenders
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        gain.gain.value = 0.001;
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(0);
+        osc.stop(ctx.currentTime + 0.01);
 
-      // Play a tiny silent <audio> element to switch iOS audio session to "playback"
-      // mode. This makes Web Audio work even when the silent/ringer switch is on.
-      const audio = new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRBqSAAAAAAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRBqSAAAAAAAAAAAAAAAAAAAA');
+        unlockedRef.current = true;
+      }
+
+      // Play the silent mp3 on EVERY user gesture. On iOS this keeps the audio
+      // session in "playback" mode so sounds work even with the ringer switch off.
+      // Reusing the same Audio element avoids creating orphaned resources.
+      if (!silentAudioRef.current) {
+        silentAudioRef.current = new Audio(SILENT_MP3);
+      }
+      const audio = silentAudioRef.current;
+      audio.currentTime = 0;
       audio.play().catch(() => {});
-
-      unlockedRef.current = true;
     } catch {
       // Silently fail
     }
@@ -72,8 +93,11 @@ export function useSoundManager() {
       const ctx = getCtx();
       // Re-resume if iOS suspended the context between interactions
       if (ctx.state === 'suspended') {
-        ctx.resume();
+        ctx.resume().catch(() => {});
       }
+      // If the context is not running yet (resume is async), bail out gracefully
+      // rather than queueing sounds that will never be heard.
+      if (ctx.state !== 'running') return;
       const now = ctx.currentTime;
 
       switch (type) {
@@ -250,10 +274,29 @@ export function useSoundManager() {
     enabledRef.current = enabled;
   }, []);
 
+  // Resume audio context on any user interaction (touchstart/touchend) anywhere
+  // in the document. This keeps iOS audio alive during gameplay when the user
+  // taps answer buttons, swipes special events, etc.
+  useEffect(() => {
+    const warmup = () => {
+      const ctx = ctxRef.current;
+      if (ctx && ctx.state === 'suspended') {
+        ctx.resume().catch(() => {});
+      }
+    };
+    document.addEventListener('touchstart', warmup, { passive: true });
+    document.addEventListener('touchend', warmup, { passive: true });
+    return () => {
+      document.removeEventListener('touchstart', warmup);
+      document.removeEventListener('touchend', warmup);
+    };
+  }, []);
+
   // Clean up on unmount
   useEffect(() => {
     return () => {
       ctxRef.current?.close();
+      silentAudioRef.current = null;
     };
   }, []);
 
