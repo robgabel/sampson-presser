@@ -13,28 +13,54 @@ type SoundType =
 export function useSoundManager() {
   const ctxRef = useRef<AudioContext | null>(null);
   const enabledRef = useRef(true);
+  const unlockedRef = useRef(false);
 
   // Lazily create AudioContext on first user interaction
   function getCtx(): AudioContext {
     if (!ctxRef.current) {
-      ctxRef.current = new AudioContext();
-    }
-    if (ctxRef.current.state === 'suspended') {
-      ctxRef.current.resume();
+      const Ctx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+      ctxRef.current = new Ctx();
     }
     return ctxRef.current;
   }
 
   // Must be called from a direct user tap (e.g. Start button) to unlock audio on iOS
   const unlock = useCallback(() => {
+    if (unlockedRef.current) return;
     try {
-      const ctx = getCtx();
-      // Play a silent buffer to unlock iOS audio
-      const buffer = ctx.createBuffer(1, 1, ctx.sampleRate);
+      const Ctx = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+      if (!ctxRef.current) {
+        ctxRef.current = new Ctx();
+      }
+      const ctx = ctxRef.current;
+
+      // Resume must happen during user gesture
+      if (ctx.state === 'suspended') {
+        ctx.resume();
+      }
+
+      // Play a silent buffer to fully unlock iOS audio
+      const buffer = ctx.createBuffer(1, 1, 22050);
       const source = ctx.createBufferSource();
       source.buffer = buffer;
       source.connect(ctx.destination);
       source.start(0);
+
+      // Also play a brief silent oscillator as belt-and-suspenders
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      gain.gain.value = 0.001;
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(0);
+      osc.stop(ctx.currentTime + 0.01);
+
+      // Play a tiny silent <audio> element to switch iOS audio session to "playback"
+      // mode. This makes Web Audio work even when the silent/ringer switch is on.
+      const audio = new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRBqSAAAAAAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRBqSAAAAAAAAAAAAAAAAAAAA');
+      audio.play().catch(() => {});
+
+      unlockedRef.current = true;
     } catch {
       // Silently fail
     }
@@ -44,6 +70,10 @@ export function useSoundManager() {
     if (!enabledRef.current) return;
     try {
       const ctx = getCtx();
+      // Re-resume if iOS suspended the context between interactions
+      if (ctx.state === 'suspended') {
+        ctx.resume();
+      }
       const now = ctx.currentTime;
 
       switch (type) {
