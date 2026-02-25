@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-02-23T21:00:00-06:00",
+    "opponent": "Kansas",
+    "coach": "Bill Self",
+    "rank": 17,
+    "location": "Away",
+    "venue": "Allen Fieldhouse",
+    "tv": "ESPN"
+  },
+  {
+    "date": "2026-02-28T12:00:00-06:00",
+    "opponent": "Colorado",
+    "coach": "Tad Boyle",
+    "rank": null,
+    "location": "Home",
+    "venue": "Fertitta Center",
+    "tv": "TBD"
+  },
+  {
+    "date": "2026-03-04T21:00:00-06:00",
+    "opponent": "Baylor",
+    "coach": "Scott Drew",
+    "rank": null,
+    "location": "Home",
+    "venue": "Fertitta Center",
+    "tv": "TBD"
+  },
+  {
+    "date": "2026-03-07T12:00:00-06:00",
+    "opponent": "Oklahoma State",
+    "coach": "Steve Lutz",
+    "rank": null,
+    "location": "Away",
+    "venue": "Gallagher-Iba Arena",
+    "tv": "CBS"
+  }
+]

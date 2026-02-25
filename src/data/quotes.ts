@@ -1,0 +1,36 @@
+export const kelvinQuotes = [
+  "Don't sleep on Houston.",
+  "Kids with sugar in their veins don't do really good here.",
+  "We weren't 34-4 playing in the Toy Poodle League.",
+  "You're not a loser in anything until you quit.",
+  "What part of $25,000 are you willing to pay?",
+  "Little old University of Houston, jumping up, swinging with the big boys.",
+  "First Monday in June. 18 hundred-yard sprints. That's where it starts.",
+  "We've got mud in our blood and we don't quit.",
+  "I coach every game like I'm running the 18 sprints with my guys.",
+  "A blue shirt, a red tie, and absolutely no interest in making people comfortable.",
+  "Ugly? 35 wins is the prettiest thing I've ever seen.",
+  "We don't plan celebrations. We plan how to destroy people's offensive sets.",
+  "My analytic is: we've got mud in our blood and we don't quit.",
+  "A junkyard dog with mud on its paws and a bone it ain't giving up.",
+  "You wanna be comfortable? Go somewhere else. You wanna be GREAT? Come here.",
+  "You're soft as puppy poop in the rain.",
+  "Hoss, we've been fouling since you were born.",
+  "Play like the hair on certain body parts is on fire.",
+  "You're like a fart in a skillet, all over the place.",
+  "If I tell the truth, they fine me $25,000. What part of that are you paying?",
+  "This isn't January against Sasquatch State.",
+  "Nobody has ever accused me of being very smart.",
+  "Show me a man that's not humble, I'll show you a man about to be humbled.",
+  "Surrender early. Thrive later. Do hard things for 40 minutes.",
+  "It's not about who we want to sign. It's who can we afford to sign.",
+  "I used to call Rick Barnes 'Little Ricky from Hickory.'",
+  "The river always wins. I'll let you figure out who the river is.",
+  "You and Quannas White had the same amount of rebounds, and he was in a suit.",
+  "Coach Sampson has no bad days. If you come in with one, he'll run right through you.",
+  "You choose who you want to be.",
+];
+
+export function getRandomQuote(): string {
+  return kelvinQuotes[Math.floor(Math.random() * kelvinQuotes.length)];
+}

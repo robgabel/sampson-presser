@@ -1,0 +1,720 @@
+[
+  {
+    "id": "q_officiating_01",
+    "category": "officiating",
+    "question": "Coach, any thoughts on the officiating tonight?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "What part of $25,000 are you willing to pay? Don't ask me silly questions.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "The refs made some calls, we dealt with it.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "The officials were very fair tonight. No complaints.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_officiating_02",
+    "category": "officiating",
+    "question": "You seemed upset about that foul call in the second half?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "I have no thoughts. Because if I tell the truth, it costs me $25,000.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We need to play through those moments.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Looking back, it was probably the right call.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_officiating_03",
+    "category": "officiating",
+    "question": "Do you think there was a missed goaltend on that last play?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "I'll tell you what I think when you write the check for my fine. Next question.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It's hard to tell in real time. We'll look at the film.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "No, I think the refs got it right in a tough spot.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_officiating_04",
+    "category": "officiating",
+    "question": "Will you be reaching out to the conference office about those calls?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "I've got better things to do. Like winning basketball games.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We'll handle that internally.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "No, the conference office does a great job managing the officials.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_officiating_05",
+    "category": "officiating",
+    "question": "Coach, you got pretty animated with the officials in the first half—",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Animated? I was just having a conversation. A LOUD conversation.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "I'm a passionate coach. It happens.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Yeah, I need to do better at controlling my emotions out there.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_officiating_06",
+    "category": "officiating",
+    "question": "You charged across the entire court to argue that call. What happened?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "I needed the exercise. My Fitbit was telling me to get my steps in.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "I disagreed with the call and let them know.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "That was embarrassing. I should have stayed on my side.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_01",
+    "category": "respect",
+    "question": "A lot of the national media picked your opponent to win. Reaction?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Don't sleep on Houston. DON'T. SLEEP. ON. HOUSTON.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We don't pay attention to predictions.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I understand why people picked them. They're a great program.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_02",
+    "category": "respect",
+    "question": "The pregame show spent 20 minutes on your opponent and 2 on Houston—",
+    "difficulty": 1,
+    "answers": [
+      { "text": "That's fine. We weren't 34-4 playing in the Toy Poodle League.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We let our play speak for itself.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "They probably deserve the attention more than us right now.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_03",
+    "category": "respect",
+    "question": "Do you feel Houston gets overlooked nationally?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Little old University of Houston, jumping up, swinging with the big boys. Keep sleeping.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We're focused on what we can control.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We're still building our brand. The blue bloods have earned their coverage.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_04",
+    "category": "respect",
+    "question": "How does it feel to silence the doubters?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "We work in silence from June to November. The doubters are just loud in January.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It feels good to validate what we've been doing.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I don't really think about doubters. Everyone's entitled to their opinion.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_05",
+    "category": "respect",
+    "question": "Your players were dancing in the locker room. Was that planned?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "We don't plan celebrations. We plan how to destroy people's offensive sets.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "They earned the right to enjoy the moment.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We need to be more humble after wins. I'll talk to them.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_06",
+    "category": "respect",
+    "question": "ESPN's analytics give you a 15% chance in the next round—",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Analytics? My analytic is: we've got mud in our blood and we don't quit.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Numbers are just numbers until you play the game.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Those models are usually pretty accurate. We're the underdog.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_01",
+    "category": "toughness",
+    "question": "How would you describe this team's identity?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Kids with sugar in their veins don't do really good here.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We're a tough, defensive-minded team.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We're a finesse team that likes to push the pace and shoot threes.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_02",
+    "category": "toughness",
+    "question": "Your team gave up only 42 points tonight. How?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "You're a good defensive team because you CARE. Not because of coaching.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Defense has been our emphasis all season.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Honestly, I think they just had an off shooting night.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_03",
+    "category": "toughness",
+    "question": "Some people say your style of play is 'ugly basketball'—",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Ugly? 35 wins is the prettiest thing I've ever seen.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We play winning basketball. That's all that matters.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I can see why people think that. We're not the most exciting team to watch.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_04",
+    "category": "toughness",
+    "question": "How do you build that toughness in your guys?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "First Monday in June. 18 hundred-yard sprints on the baseball field. That's where it starts.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It's a daily process in practice.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Some players just come in with it naturally. We're lucky.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_05",
+    "category": "toughness",
+    "question": "Your team dove on the floor six times for loose balls tonight—",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Only six? That's a slow night for us.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Effort plays are the foundation of what we do.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We might need to be more careful with that. Don't want anyone getting hurt.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_06",
+    "category": "toughness",
+    "question": "You've called this team 'junkyard dogs.' What do you mean?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "It means we'll fight you for every single possession and you're gonna feel it tomorrow.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It means we play hard and compete.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "That might have been a little strong. We're just a competitive group.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_nil_01",
+    "category": "nil",
+    "question": "How is Houston's NIL situation compared to other Big 12 schools?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "We're very poor. Somebody Venmo me a dollar.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We're working on it every day. The Big 12 transition takes time.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We can't compete with the top programs financially. It's really hard.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_nil_02",
+    "category": "nil",
+    "question": "Do you worry about losing players to the transfer portal over NIL?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "If a kid's here for the money, he's got sugar in his veins. That ain't our guy.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We trust the culture we've built.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Yes, it keeps me up at night. We need way more NIL money.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_nil_03",
+    "category": "nil",
+    "question": "A reporter just Venmo'd you $100 after your 'poor' comments—",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Mick Cronin already sent me a dollar. Y'all are late.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "That's funny. But we really are working on it.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "That's very kind. We'll take any help we can get.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_nil_04",
+    "category": "nil",
+    "question": "How do you sell Houston to a five-star recruit over a blueblood?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "I tell them: You wanna be comfortable? Go somewhere else. You wanna be GREAT? Come here.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We sell the development and the culture.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "It's tough. Those schools have advantages we just can't match.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_pronunciation_01",
+    "category": "pronunciation",
+    "question": "Coach, what can you tell us about your upcoming game against {{NEXT_OPPONENT}}?",
+    "difficulty": 2,
+    "dynamic": true,
+    "answers": [
+      { "text": "You worried about THEM? Worry about US. Don't sleep on Houston.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "They're a well-coached team. We'll be ready.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "They're really talented. I'm not sure we can match up with them.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_pronunciation_02",
+    "category": "pronunciation",
+    "question": "Kevin, can you talk about—",
+    "difficulty": 1,
+    "answers": [
+      { "text": "[Death stare] My name is KELVIN. My mother didn't raise a Kevin.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It's Kelvin. Go ahead with your question.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Kevin's fine. What's your question?", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_pronunciation_03",
+    "category": "pronunciation",
+    "question": "You coached at Washington State, up in Spokane—",
+    "difficulty": 3,
+    "answers": [
+      { "text": "Spo-CAN. Not Spo-CANE. You can't say Snohomish or Chelan either, can you?", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It's Spokane. Great city. Go ahead.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Spo-CANE was a wonderful place to start my career.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_pronunciation_04",
+    "category": "pronunciation",
+    "question": "What can you tell us about the Loo-mee tribe's support for your program?",
+    "difficulty": 3,
+    "answers": [
+      { "text": "LUM-bee. The Lumbee. My father didn't chase the Klan out of North Carolina so y'all could mispronounce us.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It's Lumbee. Their support means the world to me.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "The Loo-mee community has been wonderful.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_01",
+    "category": "opponents",
+    "question": "Your opponent's coach said they weren't worried about Houston's defense—",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Good. We love when teams aren't worried. Worry happens in the second half.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "They can say what they want. We'll be ready.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "They're a talented team. They probably have good reason to be confident.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_02",
+    "category": "opponents",
+    "question": "What conference produces the best basketball?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Shout out to my Big 12 brethren. We weren't 19-1 playing against Sasquatch State.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "The Big 12 is an elite conference.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "The SEC and Big Ten are probably at the top right now.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_03",
+    "category": "opponents",
+    "question": "Duke gets all the attention going into this matchup—",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Duke this, Duke that. Duke's great. Jon Scheyer is awesome. But DON'T SLEEP ON HOUSTON.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "They're a great program. We respect them.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Duke is the standard. We're just trying to compete at their level.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_04",
+    "category": "opponents",
+    "question": "How important is it to represent the Big 12 well in the tournament?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Playing in the Big 12 helped us. I didn't see anybody from the Toy Poodle League in the Final Four.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Conference pride is real. We want to do well for our league.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "It's more about Houston than the conference, honestly.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_05",
+    "category": "opponents",
+    "question": "This is a championship game, not a regular season game. Does that change things?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "This isn't the middle of January against Sasquatch State. This is the national championship. There's gonna be nerves.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "The stage is bigger, but we prepare the same way.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I'm trying not to think about it too much. We just need to relax and have fun.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_06",
+    "category": "opponents",
+    "question": "What do you know about tonight's opponent?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "I know they're about to meet a team with mud in its blood and a chip on its shoulder.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We've scouted them thoroughly. They're very well-coached.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Honestly, I wish we had more time to prepare. They're really talented.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_personal_01",
+    "category": "personal",
+    "question": "Your son Kellen was fired up on the sideline tonight—",
+    "difficulty": 2,
+    "answers": [
+      { "text": "My personality is more like my mother's. She was fiery. Kellen got a double dose.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "He's passionate. That's what I want from my staff.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I've told him he needs to tone it down.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_personal_02",
+    "category": "personal",
+    "question": "What would your father think of this team?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Mr. Ned would say these boys have mud in their blood. Highest compliment.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "He'd be proud. He always believed in hard work.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I try not to bring my personal life into press conferences.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_personal_03",
+    "category": "personal",
+    "question": "At 69, do you ever think about retirement?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Retire? I just got to Monday night. I've been waiting 40 years for this.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "I'll coach as long as I have the energy.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Yeah, my wife keeps bringing it up. Maybe after this season.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_personal_04",
+    "category": "personal",
+    "question": "What's the secret to your longevity in coaching?",
+    "difficulty": 3,
+    "answers": [
+      { "text": "A blue shirt, a red tie, and absolutely no interest in making people comfortable.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Loving what you do and surrounding yourself with good people.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Honestly, I'm just lucky. A lot of great coaches don't get these opportunities.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_curveball_01",
+    "category": "curveball",
+    "question": "Coach, you're sweating quite a bit. Everything okay?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "I coach every game like I'm running the 18 sprints with my guys. This is what it looks like.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "It's hot under these lights.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I should probably drink more water and calm down a bit.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_curveball_02",
+    "category": "curveball",
+    "question": "Some fans are already making memes about your press conferences—",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Good. Put that on a t-shirt. 'Don't Sleep on Houston.' That's merch.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "The internet is the internet. We focus on basketball.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I probably need to be more careful with what I say.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_curveball_03",
+    "category": "curveball",
+    "question": "If Houston was an animal, what would it be?",
+    "difficulty": 3,
+    "answers": [
+      { "text": "A junkyard dog with mud on its paws and a bone it ain't giving up.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "A cougar, obviously.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Maybe a dolphin? Smart, works well in groups.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_curveball_04",
+    "category": "curveball",
+    "question": "Last question, Coach. Any final message?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "You're not a loser in anything until you quit. Don't quit. And don't sleep on Houston.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Go Coogs.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I just hope people start giving us more respect. Please?", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_kelvinisms_01",
+    "category": "kelvinisms",
+    "question": "Coach, your bench players looked hesitant tonight. How do you get them to play with more edge?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "They're soft as puppy poop in the rain. We'll fix that by Monday.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We'll work on their confidence in practice.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I think they just need a hug and some encouragement.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_kelvinisms_02",
+    "category": "kelvinisms",
+    "question": "How do you evaluate whether a recruit fits your program's culture?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Can we get enough mud in his blood? Kids with sugar in their veins don't do really good here.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We look at their work ethic and character.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We check their social media presence and brand potential.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_kelvinisms_03",
+    "category": "kelvinisms",
+    "question": "How do you handle players who push back on your coaching style?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "It's the battle between the river and the rock. The river always wins. I'll let you figure out who the river is.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We have honest conversations about expectations.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I let the players set the culture. It's their team.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_kelvinisms_04",
+    "category": "kelvinisms",
+    "question": "What's your message to the team before a big road game?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Play like the hair on certain body parts is on fire.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Execute the game plan and stay disciplined.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Just relax and have fun out there. No pressure.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_kelvinisms_05",
+    "category": "kelvinisms",
+    "question": "Coach, the offense seemed scattered in the first half. What adjustments did you make?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "I told them they looked like a fart in a skillet — all over the place. We settled down.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We simplified our sets and got better spacing.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I let the players figure it out themselves.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_kelvinisms_06",
+    "category": "kelvinisms",
+    "question": "Coach, your forwards combined for just 4 rebounds tonight. Is that a concern?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Four rebounds? Quannas White had the same amount and he was wearing a suit on the bench.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We need to do a better job on the glass.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Rebounds are kind of an overrated stat honestly.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_money_01",
+    "category": "money",
+    "question": "Coach, how do you compete in NIL with programs like Kansas and Texas?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "We have a very poor athletic department. We're poor. We were poor when I got here, and we're still poor.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We're working on growing our NIL collective.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Money doesn't matter. Kids come here for the love of the game.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_money_02",
+    "category": "money",
+    "question": "There are some big-name transfers in the portal this spring. Are you making calls?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "It's not about who we want to sign. It's 'who can we afford to sign?'", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We're being strategic about our portal approach.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We're throwing blank checks at five-stars. Spare no expense.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_money_03",
+    "category": "money",
+    "question": "Coach, Mick Cronin apparently sent you a dollar after your budget comments. Your reaction?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "He Venmo'd me a dollar and said 'I heard your schtick. Here's a dollar.' Mick's a good dude.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "I appreciate the gesture. Mick and I go way back.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I'm going to Venmo him back double. UCLA needs it more.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_money_04",
+    "category": "money",
+    "question": "Do you regret calling Houston's athletic department 'poor' last week?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "I shouldn't have said we're poor. We're not poor. We're anything but poor. But the NIL thing? That's not a bottomless pit.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "I could have phrased it differently.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I stand by everything I said. We're broke.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_07",
+    "category": "respect",
+    "question": "Critics say Houston's Big 12 schedule doesn't prepare you for March.",
+    "difficulty": 1,
+    "answers": [
+      { "text": "We weren't 34-4 playing in the Toy Poodle League. This is the Big 12.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Our conference record speaks for itself.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Yeah, we probably need a harder schedule.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_respect_08",
+    "category": "respect",
+    "question": "Some people still think of Houston as a football school. How do you change that?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "The University of Houston is a program that should have national relevance. And now it does.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We're building something special here.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Football is king in Texas. We're just happy to be here.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_07",
+    "category": "toughness",
+    "question": "How do you prepare this team for hostile road environments?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "To win on the road, you don't have to be great. You have to be tough. And we were tough enough.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We simulate crowd noise in practice.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Road games are really hard. We're just hoping to split.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_08",
+    "category": "toughness",
+    "question": "Your team always seems to wear opponents down in the second half. What's the secret?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Surrender early. Thrive later. Do hard things, do them harder than your opponents, and do them for 40 minutes.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We emphasize conditioning and depth.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We're just lucky teams get tired against us.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_toughness_09",
+    "category": "toughness",
+    "question": "How do you get freshmen to buy into a program where they might not start?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "You choose who you want to be. Nobody's making that choice for you.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We have a developmental plan for every player.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We promise them minutes in their recruitment.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_personal_05",
+    "category": "personal",
+    "question": "You and Rick Barnes have been coaching against each other for decades. What's that rivalry like?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Rick Barnes and I played college basketball against each other 50 years ago. I used to call him Little Ricky from Hickory.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Rick's a great coach. We have a lot of respect for each other.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "Rick Barnes? I don't really keep track of other coaches.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_personal_06",
+    "category": "personal",
+    "question": "You've talked about your Lumbee heritage shaping who you are. How does that show up in coaching?",
+    "difficulty": 3,
+    "answers": [
+      { "text": "My connections to my culture, to coaching, is being Lumbee. That's who I am.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "My upbringing taught me the value of hard work.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "I don't really think about that stuff on the court.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_curveball_05",
+    "category": "curveball",
+    "question": "Coach, you started four freshmen in the first half tonight. Was that the plan?",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Believe it or not, I played four freshmen in the first half. Who does that? Nobody has ever accused me of being very smart.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "We needed to shake things up.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "My analytics team told me to. I just do what the numbers say.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_curveball_06",
+    "category": "curveball",
+    "question": "Bill Self just called you 'the best ball coach in America.' Your response?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Bill's just trying to butter me up so I stop beating him. But I'll take it.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "That means a lot coming from a Hall of Famer.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "He's right. I should be in the Hall of Fame by now.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_curveball_07",
+    "category": "curveball",
+    "question": "Coach, a young reporter just asked about your foul trouble—",
+    "difficulty": 1,
+    "answers": [
+      { "text": "Hoss, we've been fouling since you were born.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "Foul trouble is something we monitor closely.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "That's a fair question. We really need to clean that up.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_coach_prep",
+    "category": "opponents",
+    "question": "Coach, how do you prepare for playing against {{NEXT_COACH}} this week?",
+    "difficulty": 2,
+    "dynamic": true,
+    "answers": [
+      { "text": "I don't prepare for coaches. I prepare my guys to play so hard the other coach has to prepare for US.", "type": "peak_kelvin", "points": 500, "animation": "pump", "kelvinQuote": true },
+      { "text": "We study film and focus on executing our game plan.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We have a lot of respect for their program and just hope to compete.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_freshmen_cenac",
+    "category": "toughness",
+    "question": "Coach, what's your assessment of freshman Chris Cenac so far?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "That kid's got mud in his blood. He came in Day 1 ready to fight. I told him, 'Son, you're not in high school anymore.' He looked at me and said, 'Good.'", "type": "peak_kelvin", "points": 500, "animation": "pump", "kelvinQuote": true },
+      { "text": "He's working hard every day and getting better.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We're being patient with his development and managing his minutes carefully.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_freshmen_flemings",
+    "category": "toughness",
+    "question": "How has Kingston Flemings adjusted to the college game?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Kingston doesn't adjust to the college game. The college game adjusts to Kingston. That boy plays like his hair's on fire and I love it.", "type": "peak_kelvin", "points": 500, "animation": "pump", "kelvinQuote": true },
+      { "text": "He's a talented young man who's learning our system.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We're easing him in slowly so he doesn't get overwhelmed.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_freshmen_harwell",
+    "category": "toughness",
+    "question": "What role do you see Isiah Harwell playing down the stretch?",
+    "difficulty": 2,
+    "answers": [
+      { "text": "Whatever role involves making the other team uncomfortable. That kid is a dog. I mean that as the highest compliment I can give.", "type": "peak_kelvin", "points": 500, "animation": "pump", "kelvinQuote": true },
+      { "text": "He's going to contribute where we need him.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "We'll see how he develops over the next few seasons. No rush.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  },
+  {
+    "id": "q_opponents_silly",
+    "category": "opponents",
+    "question": "Coach, what's your honest take on {{NEXT_OPPONENT}} this year?",
+    "difficulty": 2,
+    "dynamic": true,
+    "answers": [
+      { "text": "I want to go buy you a beer and educate you so you stop asking dumb questions.", "type": "peak_kelvin", "points": 500, "animation": "podium_slam", "kelvinQuote": true },
+      { "text": "They're a solid team and we'll be ready.", "type": "mid", "points": 100, "animation": "neutral_nod", "kelvinQuote": false },
+      { "text": "They're really scary. I'm honestly not sure we can match up with them.", "type": "anti_kelvin", "points": 0, "animation": "crowd_boo", "kelvinQuote": false }
+    ]
+  }
+]

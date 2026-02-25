@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "quote": "You're soft as puppy poop in the rain.",
+    "context": "Said to players regularly in practice. Players confirmed at 2025 Final Four it's his most-used line. He apparently uses a less G-rated version of 'poop.'",
+    "source": "KHOU profile / Yahoo Sports Final Four player interviews",
+    "year": "Ongoing",
+    "hilarity_score": 10,
+    "tags": ["insult", "practice", "iconic", "player-favorite"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 2,
+    "quote": "Don't sleep on Houston. Don't sleep on Houston. We weren't 34-4 playing in the Toy Poodle League.",
+    "context": "Postgame interview after Houston's miraculous 70-67 comeback win over Duke in the 2025 Final Four. Went mega-viral.",
+    "source": "KHOU / SI / On3",
+    "year": "2025",
+    "hilarity_score": 10,
+    "tags": ["iconic", "viral", "postgame", "Duke"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 3,
+    "quote": "This isn't the middle of January against Sasquatch State. This is the national championship.",
+    "context": "Said to CBS reporter Tracy Wolfson during a timeout in the 2025 National Championship game vs Florida. Became an instant meme. Sasquatch State does not exist.",
+    "source": "Yahoo Sports / Awful Announcing / Sportskeeda",
+    "year": "2025",
+    "hilarity_score": 10,
+    "tags": ["iconic", "viral", "invented-school", "championship"],
+    "game_use": "special_event_invent_school"
+  },
+  {
+    "id": 4,
+    "quote": "If I say something and answer your question, they fine me $25,000. What part of $25,000 are you willing to pay? So don't ask me silly questions, because there's a $25,000 fine if I tell the truth.",
+    "context": "Postgame presser after getting ejected vs Oklahoma State in Feb 2024. Reporter asked about the ejection.",
+    "source": "Awful Announcing / SI",
+    "year": "2024",
+    "hilarity_score": 10,
+    "tags": ["reporter-roast", "ejection", "fine", "iconic"],
+    "game_use": "anti_kelvin_fine_reference"
+  },
+  {
+    "id": 5,
+    "quote": "You're like a fart in a skillet, you're all over the place.",
+    "context": "Said to players. Shared by his son Kellen Sampson.",
+    "source": "KHOU profile",
+    "year": "Ongoing",
+    "hilarity_score": 9,
+    "tags": ["insult", "practice", "Kellen"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 6,
+    "quote": "It always burns me up when people say that. It's like calling me Kevin. My name is not Kevin.",
+    "context": "Epic rant after a reporter mispronounced 'Gonzaga' as 'Gon-ZAWG-ah' before their 2025 NCAA Tournament matchup. Then lectured the room on Spokane pronunciation too.",
+    "source": "SI / Yardbarker / 247Sports / Awful Announcing",
+    "year": "2025",
+    "hilarity_score": 10,
+    "tags": ["reporter-roast", "pronunciation", "viral", "Gonzaga"],
+    "game_use": "pronunciation_blitz_reference"
+  },
+  {
+    "id": 7,
+    "quote": "It's not Spo-cane, and it's not Gon-zawg-ah. It's Gonzaga and it's Spo-can.",
+    "context": "Continuation of the Gonzaga pronunciation rant. He coached at Washington State and Gonzaga was his neighbor.",
+    "source": "SI / Yardbarker / 247Sports",
+    "year": "2025",
+    "hilarity_score": 8,
+    "tags": ["pronunciation", "rant", "Gonzaga"],
+    "game_use": "pronunciation_blitz_reference"
+  },
+  {
+    "id": 8,
+    "quote": "My mom told me, 'Don't let people call you Kevin. Your name is Kelvin. Make sure they pronounce your name right.'",
+    "context": "Part of the Gonzaga pronunciation rant, explaining why he's so sensitive about names.",
+    "source": "SI / Clutch Points",
+    "year": "2025",
+    "hilarity_score": 8,
+    "tags": ["personal", "pronunciation", "mom"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 9,
+    "quote": "Hoss, we've been fouling since you were born.",
+    "context": "Said to a young reporter who asked if he was concerned about fouls. Classic Sampson dismissal with humor.",
+    "source": "Joseph Duarte / Houston Chronicle via X",
+    "year": "2026",
+    "hilarity_score": 9,
+    "tags": ["reporter-roast", "one-liner", "presser"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 10,
+    "quote": "We have a very poor athletic department. We're poor. We were poor when I got here, and we're still poor.",
+    "context": "After a 29-point blowout win over UCF, launched into an NIL rant. Walked it back the next day.",
+    "source": "On3 / Yardbarker / Yahoo Sports",
+    "year": "2025",
+    "hilarity_score": 8,
+    "tags": ["NIL", "rant", "money", "viral"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 11,
+    "quote": "Mick Cronin Venmos me a dollar and says, 'Yo man, I heard your schtick at your postgame press conference. You've got to learn not to say certain things. But I did get that you don't have very much, so here's a dollar.'",
+    "context": "Kelvin recounting UCLA coach Mick Cronin's hilarious response to his 'we're poor' rant.",
+    "source": "SI / On3 / College Football Network",
+    "year": "2025",
+    "hilarity_score": 9,
+    "tags": ["Mick-Cronin", "NIL", "Venmo", "hilarious"],
+    "game_use": "venmo_special_event"
+  },
+  {
+    "id": 12,
+    "quote": "I shouldn't have said we're poor. We're not poor. We're anything but poor.",
+    "context": "Walking back his viral NIL comments the very next day.",
+    "source": "Yahoo Sports / Yardbarker",
+    "year": "2025",
+    "hilarity_score": 7,
+    "tags": ["NIL", "walkback", "self-aware"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 13,
+    "quote": "My biggest concern with Taze was, could we get enough mud in his blood. Kids with sugar in their veins don't do really good here.",
+    "context": "About player Taze Moore's development. First time fans heard this particular Sampsonism.",
+    "source": "CoogFans forum",
+    "year": "2022",
+    "hilarity_score": 9,
+    "tags": ["recruiting", "culture", "one-liner", "iconic"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 14,
+    "quote": "Show me a man that's not humble, I'll show you a man that's about to be humbled.",
+    "context": "Shared by player McFarland as one of his favorite Kelvinisms at the 2025 Final Four.",
+    "source": "Yahoo Sports Final Four player interviews",
+    "year": "2025",
+    "hilarity_score": 8,
+    "tags": ["Kelvinism", "wisdom", "player-favorite"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 15,
+    "quote": "I like when he tells us we gotta play like the hair on certain body parts is on fire.",
+    "context": "Emanuel Sharp's favorite Kelvinism, shared at the 2025 Final Four. He was diplomatic about which body parts.",
+    "source": "Yahoo Sports Final Four player interviews",
+    "year": "2025",
+    "hilarity_score": 9,
+    "tags": ["Kelvinism", "player-favorite", "censored"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 16,
+    "quote": "When somebody has zero rebounds in a game — you and Quannas White had the same amount of rebounds.",
+    "context": "Jefferson's favorite Kelvinism. Quannas White is an assistant coach. Having the same stats as a guy in a suit is not a compliment.",
+    "source": "Yahoo Sports Final Four player interviews",
+    "year": "2025",
+    "hilarity_score": 9,
+    "tags": ["Kelvinism", "player-roast", "rebounds"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 17,
+    "quote": "When a kid comes in hard-headed it's like the battle between the river and the rock. The river always wins. So I'll let you figure out who the river is.",
+    "context": "On how he handles stubborn players. Said during 2025 media availability.",
+    "source": "SI Houston",
+    "year": "2025",
+    "hilarity_score": 8,
+    "tags": ["wisdom", "culture", "metaphor"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 18,
+    "quote": "Nobody has ever accused me of being very smart.",
+    "context": "After starting four freshmen in the first half vs Cincinnati and still winning 67-60.",
+    "source": "Clutch Points",
+    "year": "2026",
+    "hilarity_score": 8,
+    "tags": ["self-deprecating", "freshmen", "presser"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 19,
+    "quote": "Believe it or not, I played four freshmen in the first half. Who does that?",
+    "context": "Same Cincinnati postgame presser. Rhetorical question delivered with perfect timing.",
+    "source": "Clutch Points",
+    "year": "2026",
+    "hilarity_score": 7,
+    "tags": ["self-deprecating", "presser"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 20,
+    "quote": "Rick Barnes and I played college basketball against each other 50 years ago. I used to call him Little Ricky from Hickory.",
+    "context": "After losing to Tennessee at the Players Era Festival. Casual 50-year-old nickname drop.",
+    "source": "On3",
+    "year": "2024",
+    "hilarity_score": 7,
+    "tags": ["personal", "nostalgia", "Rick-Barnes"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 21,
+    "quote": "I didn't even see him coming. I didn't know he was out there until I heard the first whistle for the first tech.",
+    "context": "Jamal Shead's reaction to Sampson's legendary ejection sprint across the court vs Oklahoma State. Shead was laughing.",
+    "source": "PaperCity Magazine",
+    "year": "2024",
+    "hilarity_score": 8,
+    "tags": ["ejection", "Shead", "Oklahoma-State"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 22,
+    "quote": "You coach at a have-not school, and you have to have a competitiveness and a resolve and resiliency that's different, or you'll never make it. You've got to find a way to do more with less.",
+    "context": "On his coaching philosophy and the underdog mentality he's built at Houston.",
+    "source": "BrainyQuote / SI",
+    "year": "Ongoing",
+    "hilarity_score": 6,
+    "tags": ["philosophy", "underdog", "culture"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 23,
+    "quote": "Little old University of Houston jumping up, swinging with the big boys, and that's something to take pride in.",
+    "context": "Classic chip-on-shoulder Sampson positioning Houston as the scrappy underdog.",
+    "source": "BrainyQuote",
+    "year": "Ongoing",
+    "hilarity_score": 7,
+    "tags": ["underdog", "pride", "culture"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 24,
+    "quote": "To win on the road, you don't have to be great. You have to be tough. And we were tough enough to win on the road.",
+    "context": "After a gritty 79-70 road win at TCU.",
+    "source": "FOX 26 Houston",
+    "year": "2024",
+    "hilarity_score": 6,
+    "tags": ["toughness", "road-win", "philosophy"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 25,
+    "quote": "Mistakes were made; lessons were learned. Although I don't agree with all the conclusions the NCAA made, I respect the NCAA as an institution.",
+    "context": "Opening statement at his Houston introductory press conference in 2014, addressing his NCAA sanctions head-on.",
+    "source": "UH Athletics",
+    "year": "2014",
+    "hilarity_score": 6,
+    "tags": ["redemption", "introductory", "NCAA"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 26,
+    "quote": "No one ever loses at anything as long as you don't quit. When you quit, I don't care, you've lost.",
+    "context": "Postgame after the Duke comeback win. Distilled his entire coaching philosophy into two sentences.",
+    "source": "SI / KHOU",
+    "year": "2025",
+    "hilarity_score": 6,
+    "tags": ["philosophy", "motivational", "Duke"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 27,
+    "quote": "I told our guys after the game to be disappointed you lost, but do not be disappointed in your effort.",
+    "context": "After losing the 2025 National Championship to Florida.",
+    "source": "FOX 26 Houston",
+    "year": "2025",
+    "hilarity_score": 5,
+    "tags": ["motivational", "championship-loss", "class"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 28,
+    "quote": "We haven't ever won a National Championship. But until you can cross that threshold, you're always going to feel like you have to stand up for your program.",
+    "context": "Explaining the 'don't sleep' mentality after beating Duke.",
+    "source": "SI",
+    "year": "2025",
+    "hilarity_score": 6,
+    "tags": ["chip-on-shoulder", "program-building"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 29,
+    "quote": "The most uncomfortable feeling he can have is if he's the favorite. He is so comfortable coaching as an underdog.",
+    "context": "Kellen Sampson (his son) describing his father's mentality.",
+    "source": "PaperCity Magazine",
+    "year": "2022",
+    "hilarity_score": 7,
+    "tags": ["Kellen", "underdog", "mentality"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 30,
+    "quote": "If you're going to build a culture, the first thing you have to come to grips with is: You're going to have confrontation.",
+    "context": "From a leadership lecture in 2022. Built his program culture around confrontation, consistency, competence, and confidence.",
+    "source": "CNBC / NBC Philadelphia",
+    "year": "2022",
+    "hilarity_score": 6,
+    "tags": ["leadership", "culture", "confrontation"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 31,
+    "quote": "He doesn't take resumes or phone calls from people looking to join his staff. All his hires are from within because 'that's culture.'",
+    "context": "On why he only promotes from within his coaching tree.",
+    "source": "College Football Network / SI",
+    "year": "2025",
+    "hilarity_score": 6,
+    "tags": ["culture", "coaching-tree", "loyalty"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 32,
+    "quote": "We fight. That's really the culture.",
+    "context": "Emanuel Sharp summing up Sampson's culture in four words.",
+    "source": "The Daily Cougar / General reporting",
+    "year": "2025",
+    "hilarity_score": 6,
+    "tags": ["culture", "Sharp", "fight"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 33,
+    "quote": "Coach Sampson has no bad days, so if you come in and you're having a bad day, he's gonna run right through you.",
+    "context": "Freshman Kingston Flemings learning about the river-and-rock philosophy firsthand.",
+    "source": "SI Houston",
+    "year": "2025",
+    "hilarity_score": 7,
+    "tags": ["freshman", "culture", "Flemings"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 34,
+    "quote": "He puts you through this stuff to see if you're gonna fold or if you're gonna stand up, if you're gonna be a good teammate or a bad teammate.",
+    "context": "J'Wan Roberts explaining Sampson's method.",
+    "source": "Yahoo Sports / SI",
+    "year": "2025",
+    "hilarity_score": 6,
+    "tags": ["culture", "Roberts", "testing"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 35,
+    "quote": "You're always gonna reach that point where you're kind of fed up, but that's where the older guys kind of help. It's never personal. He wants the best out of you.",
+    "context": "Emanuel Sharp on surviving Sampson's coaching style.",
+    "source": "Yahoo Sports",
+    "year": "2025",
+    "hilarity_score": 5,
+    "tags": ["culture", "Sharp", "growth"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 36,
+    "quote": "To me, the best program in the country for Kelvin Sampson is University of Houston. I love the city. I love the upward trajectory of our program. We're not done growing.",
+    "context": "On why Houston is his forever home.",
+    "source": "Washington Post / General reporting",
+    "year": "2023",
+    "hilarity_score": 5,
+    "tags": ["loyalty", "Houston", "program"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 37,
+    "quote": "Surrender early, thrive later. Do hard things, do them harder than your opponents, and do them for 40 minutes.",
+    "context": "Described as the basic building block of everything Sampson has built at Houston.",
+    "source": "General reporting / PaperCity",
+    "year": "Ongoing",
+    "hilarity_score": 7,
+    "tags": ["philosophy", "culture", "toughness"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 38,
+    "quote": "Teams that have the best recruiting classes usually have the most money. That's the way it is today. It's not about who we want to sign. It's, 'Who can we afford to sign?'",
+    "context": "Part of the viral 'we're poor' NIL rant after UCF.",
+    "source": "On3 / Yardbarker",
+    "year": "2025",
+    "hilarity_score": 7,
+    "tags": ["NIL", "recruiting", "money"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 39,
+    "quote": "Kansas is one of those teams that you just never know, but they're pretty good.",
+    "context": "After losing at Allen Fieldhouse. Darryn Peterson's confused reaction: 'What do you mean you never know? I don't like that.' became its own viral moment.",
+    "source": "EssentiallySports / Clutch Points",
+    "year": "2026",
+    "hilarity_score": 8,
+    "tags": ["Kansas", "shade", "Peterson-response"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 40,
+    "quote": "This program to me is all about the players.",
+    "context": "In the locker room after beating Tennessee to reach the 2025 Final Four.",
+    "source": "PaperCity Magazine",
+    "year": "2025",
+    "hilarity_score": 5,
+    "tags": ["heartfelt", "Final-Four", "locker-room"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 41,
+    "quote": "We don't celebrate until there's something to celebrate at Houston.",
+    "context": "Kellen Sampson on the program's stoic mentality.",
+    "source": "PaperCity Magazine",
+    "year": "2024",
+    "hilarity_score": 6,
+    "tags": ["Kellen", "culture", "stoic"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 42,
+    "quote": "These guys would run through a wall for him. He knows they love him.",
+    "context": "Kellen Sampson about the players' devotion to Kelvin after the Big 12 Championship.",
+    "source": "PaperCity Magazine",
+    "year": "2024",
+    "hilarity_score": 6,
+    "tags": ["Kellen", "loyalty", "Big-12-Championship"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 43,
+    "quote": "You choose who you want to be.",
+    "context": "Simple four-word Sampsonism that captures his whole approach to personal accountability.",
+    "source": "BrainyQuote",
+    "year": "Ongoing",
+    "hilarity_score": 5,
+    "tags": ["philosophy", "accountability", "short"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 44,
+    "quote": "My connections to my culture, to coaching, is being Lumbee.",
+    "context": "On how his Lumbee Tribe heritage shaped his identity and coaching style.",
+    "source": "NDN Sports",
+    "year": "2023",
+    "hilarity_score": 5,
+    "tags": ["Lumbee", "heritage", "personal"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 45,
+    "quote": "The bathrooms had signs on them: white, colored, and other. Robeson County, NC was tri-racial: white, black, and Lumbee.",
+    "context": "On growing up in segregated North Carolina. Powerful context for who Kelvin Sampson is.",
+    "source": "CBS Sports / NDN Sports",
+    "year": "2025",
+    "hilarity_score": 4,
+    "tags": ["personal", "heritage", "serious", "Lumbee"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 46,
+    "quote": "What we've been all year is a jump shot shooting team. And that's okay, you can win a lot of games doing that, but at some point you've got to get transition points.",
+    "context": "Identifying Houston's biggest issue during a February 2026 rough stretch.",
+    "source": "SI Houston / Yardbarker",
+    "year": "2026",
+    "hilarity_score": 5,
+    "tags": ["strategy", "self-criticism", "offense"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 47,
+    "quote": "This is all behind us now. We lick our wounds. We haven't been through anything like this because we've been the winningest program in America for how many years.",
+    "context": "After three straight losses in February 2026. First 3-game losing streak since 2017.",
+    "source": "General reporting",
+    "year": "2026",
+    "hilarity_score": 6,
+    "tags": ["adversity", "losing-streak", "resilience"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 48,
+    "quote": "I felt if we held Florida under 70 we'd have a chance to win. Saturday we found a way to win. Tonight, maybe not so much. We didn't score it well enough to win.",
+    "context": "After losing the 2025 National Championship to Florida. Classic understated Sampson.",
+    "source": "FOX 26 Houston",
+    "year": "2025",
+    "hilarity_score": 5,
+    "tags": ["championship-loss", "analysis", "understated"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 49,
+    "quote": "The University of Houston is a program that should have national relevance.",
+    "context": "Statement of ambition that he has clearly delivered on.",
+    "source": "BrainyQuote / General",
+    "year": "2014",
+    "hilarity_score": 5,
+    "tags": ["ambition", "vision", "program"],
+    "game_use": "result_screen_quote"
+  },
+  {
+    "id": 50,
+    "quote": "Dreams do come true.",
+    "context": "Simple and sincere. Perfect for the end of a great game run.",
+    "source": "BrainyQuote",
+    "year": "Ongoing",
+    "hilarity_score": 5,
+    "tags": ["motivational", "sincere", "short"],
+    "game_use": "result_screen_quote"
+  }
+]
