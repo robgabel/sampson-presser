@@ -25,6 +25,21 @@ export function useSoundManager() {
     return ctxRef.current;
   }
 
+  // Must be called from a direct user tap (e.g. Start button) to unlock audio on iOS
+  const unlock = useCallback(() => {
+    try {
+      const ctx = getCtx();
+      // Play a silent buffer to unlock iOS audio
+      const buffer = ctx.createBuffer(1, 1, ctx.sampleRate);
+      const source = ctx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(ctx.destination);
+      source.start(0);
+    } catch {
+      // Silently fail
+    }
+  }, []);
+
   const play = useCallback((type: SoundType) => {
     if (!enabledRef.current) return;
     try {
@@ -212,5 +227,5 @@ export function useSoundManager() {
     };
   }, []);
 
-  return { play, setEnabled, enabledRef };
+  return { play, setEnabled, enabledRef, unlock };
 }

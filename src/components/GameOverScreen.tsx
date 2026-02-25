@@ -48,13 +48,13 @@ export function GameOverScreen({ state, onPlayAgain, onBackToTitle }: GameOverSc
         await navigator.share({
           title: "Coach Samp's Pregame Presser",
           text: shareText,
-          url: window.location.href,
+          url: 'https://sampson-presser.vercel.app',
         });
       } catch {
         // user cancelled
       }
     } else {
-      await navigator.clipboard.writeText(`${shareText} ${window.location.href}`);
+      await navigator.clipboard.writeText(`${shareText} https://sampson-presser.vercel.app`);
       alert('Copied to clipboard!');
     }
   };
