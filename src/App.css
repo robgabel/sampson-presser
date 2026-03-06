@@ -740,6 +740,46 @@ html, body {
   border-bottom: 2px solid rgba(200, 16, 46, 0.3);
 }
 
+.level-indicator {
+  margin-bottom: 12px;
+}
+
+.level-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.level-bar {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.level-pip {
+  width: 28px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.3s;
+}
+
+.level-pip-filled {
+  background: var(--gold);
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
+}
+
+.level-next {
+  font-size: 13px;
+  color: var(--gold);
+  margin-top: 8px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
 .rating-title {
   font-size: 28px;
   font-weight: 900;
