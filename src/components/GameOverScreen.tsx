@@ -9,14 +9,16 @@ interface GameOverScreenProps {
   onBackToTitle: () => void;
 }
 
-function getRating(score: number): { title: string; flavor: string } {
-  if (score >= 15001) return { title: 'PEAK KELVIN 🐐', flavor: "You out-Kelvined Kelvin. Reporters in shambles." };
-  if (score >= 12001) return { title: "Don't Sleep on This One", flavor: "You ARE the press conference." };
-  if (score >= 8001) return { title: 'Mud in the Blood', flavor: "Now we're talking. Don't sleep on this one." };
-  if (score >= 5001) return { title: 'Big 12 Respectable', flavor: "You survived. Shout out to the Big 12 brethren." };
-  if (score >= 2001) return { title: 'Sugar in the Veins', flavor: "Kelvin would not recruit you." };
-  if (score >= 1) return { title: 'Sasquatch State Assistant Coach', flavor: "You have sugar in your veins." };
-  return { title: 'Escorted Out by Security', flavor: "You owe the Big 12 more than your house is worth." };
+const TOTAL_LEVELS = 7;
+
+function getRating(score: number): { title: string; flavor: string; level: number; nextThreshold: number | null } {
+  if (score >= 15001) return { title: 'PEAK KELVIN 🐐', flavor: "You out-Kelvined Kelvin. Reporters in shambles.", level: 7, nextThreshold: null };
+  if (score >= 12001) return { title: "Don't Sleep on This One", flavor: "You ARE the press conference.", level: 6, nextThreshold: 15001 };
+  if (score >= 8001) return { title: 'Mud in the Blood', flavor: "Now we're talking. Don't sleep on this one.", level: 5, nextThreshold: 12001 };
+  if (score >= 5001) return { title: 'Big 12 Respectable', flavor: "You survived. Shout out to the Big 12 brethren.", level: 4, nextThreshold: 8001 };
+  if (score >= 2001) return { title: 'Sugar in the Veins', flavor: "Kelvin would not recruit you.", level: 3, nextThreshold: 5001 };
+  if (score >= 1) return { title: 'Sasquatch State Assistant Coach', flavor: "You have sugar in your veins.", level: 2, nextThreshold: 2001 };
+  return { title: 'Escorted Out by Security', flavor: "You owe the Big 12 more than your house is worth.", level: 1, nextThreshold: 1 };
 }
 
 function getEndLabel(reason: string | null): { text: string; emoji: string } {
@@ -39,7 +41,7 @@ export function GameOverScreen({ state, onPlayAgain, onBackToTitle }: GameOverSc
   const shareText = useMemo(() => {
     const gameContext = nextGame ? formatGameContext(nextGame) : '';
     const contextLine = gameContext ? ` prepping for ${nextGame?.opponent} tonight!` : ' in Coach Samp\'s Pregame Presser!';
-    return `I got ${rating.title}${contextLine} Score: ${state.score.toLocaleString()}. Can you survive Coach Samp's presser?`;
+    return `I got ${rating.title} (Level ${rating.level}/${TOTAL_LEVELS})${contextLine} Score: ${state.score.toLocaleString()}. Can you survive Coach Samp's presser?`;
   }, [state.score, rating.title, nextGame]);
 
   const handleShare = async () => {
@@ -77,8 +79,26 @@ export function GameOverScreen({ state, onPlayAgain, onBackToTitle }: GameOverSc
       )}
 
       <div className="gameover-rating">
+        <div className="level-indicator">
+          <span className="level-text">LEVEL {rating.level} OF {TOTAL_LEVELS}</span>
+          <div className="level-bar">
+            {Array.from({ length: TOTAL_LEVELS }, (_, i) => (
+              <div
+                key={i}
+                className={`level-pip ${i < rating.level ? 'level-pip-filled' : ''}`}
+              />
+            ))}
+          </div>
+        </div>
         <h2 className="rating-title">{rating.title}</h2>
         <p className="rating-flavor">{rating.flavor}</p>
+        {rating.nextThreshold !== null && (
+          <p className="level-next">
+            {state.score === 0
+              ? 'Score any points to reach Level 2!'
+              : `${(rating.nextThreshold - state.score).toLocaleString()} more points to reach Level ${rating.level + 1}`}
+          </p>
+        )}
       </div>
 
       <div className="gameover-score">

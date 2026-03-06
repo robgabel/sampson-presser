@@ -10,8 +10,8 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
   return (
     <div className="title-screen">
       <div className="title-content">
-        <div className="title-badge">PREGAME PRESSER</div>
-        <h1 className="title-main">COACH SAMP'S<br />PREGAME PRESSER</h1>
+        <div className="title-badge">PRESS SIMULATOR</div>
+        <h1 className="title-main">COACH SAMP<br />PRESS SIMULATOR</h1>
 
         {nextGame ? (
           <div className="title-opponent">
@@ -25,7 +25,7 @@ export function TitleScreen({ onStart }: TitleScreenProps) {
         )}
 
         <p className="title-tagline">
-          Don't get fined. Don't get soft. Don't call him Kevin.
+          Can you find the Kelvin-isms?
         </p>
 
         <button className="start-button" onClick={onStart}>

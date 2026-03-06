@@ -3,7 +3,7 @@ import type { GameState, Question, Answer, GameStats, SpecialEventType, SpecialE
 import questionsData from '../data/questions.json';
 import { getNextGame } from '../utils/schedule';
 
-const INITIAL_TIME = 90;
+const INITIAL_TIME = 120;
 const INITIAL_BANK = 100000;
 const INITIAL_SWEAT = 15;
 const FINE_AMOUNT = 25000;
